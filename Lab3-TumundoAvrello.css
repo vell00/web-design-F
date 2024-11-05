@@ -26,9 +26,9 @@
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     text-align: center;
-}
+  }
   
-.card h1 {
+  .card h1 { 
     text-align: left    ;
     font-size: 2em;
     margin-bottom: 10px;
