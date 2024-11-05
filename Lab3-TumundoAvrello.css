@@ -24,11 +24,11 @@
     padding: 40px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
   
-  .card h1 {
+.card h1 {
     text-align: left    ;
     font-size: 2em;
     margin-bottom: 10px;
@@ -49,7 +49,7 @@
   input[type="password"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #999;
     border-radius: 4px;
     font-size: 1em;
   }
@@ -61,7 +61,10 @@
   p {
     text-align: left;
   }
-
+  
+  p :hover {
+    background-color:#0056b3; 
+  }
 
   button.submit {
     border-radius: 8p;
@@ -90,13 +93,16 @@
   
   a:hover {
     text-decoration: underline;
+    color:#007bff;
+    background-color: #0056b3;
   }
   
   .divider {
     margin: 20px 0;
     position: relative;
     font-size: 0.9em;
-    color: #000;
+    color: #000
+    ;
     text-align: center;
   }
   
@@ -129,7 +135,7 @@
     justify-content: center;
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     border-radius: 4px;
     font-size: 1em;
     cursor: pointer;
@@ -139,7 +145,10 @@
   }
   
   button.social:hover {
-    border-color: #000;
+    border-color:#aaa;
+    color: #333;
+    background-color: #aaa;
+    
   }
   
   button.social i {
@@ -157,4 +166,22 @@
     color: #000;
     margin-top: 1rem;
     text-align: center;
+  }
+
+  input[type="text"]:hover,
+  input[type="text"]:focus {
+    border-top: 2px solid rgb(44, 123, 166);
+    border-bottom: 2px solid rgb(44, 123, 166);
+    border-left: 2px solid rgb(44, 123, 166);
+    border-right: 2px solid rgb(44, 123, 166);  
+    outline: 0;
+  }
+
+  input[type="password"]:hover,
+  input[type="password"]:focus {
+    border-top: solid rgb(44, 123, 166);
+    border-bottom: solid rgb(44, 123, 166);
+    border-left: 2px solid rgb(44, 123, 166);
+    border-right: 2px solid rgb(44, 123, 166);  
+    outline: 0;
   }
