@@ -1,0 +1,38 @@
+#layout {
+    display: grid;
+    grid-template-rows: [header-start] 100px [content-start] 400px [footer-start] 100px;
+    grid-template-columns: [ads] 200px [main] 500px [links] 200px;
+    grid-template-areas:
+        "header header  header"
+        "ads    main    links"
+        "footer footer  footer";
+}
+
+
+
+#one {
+    background-color: aqua;
+    grid-area: header;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+#two {
+    background-color: bisque;
+    grid-area: ads;
+}
+#three {
+    background-color: lightpink;
+    grid-area: main;
+}
+#four {
+    background-color: lightsteelblue;
+    grid-area: links;
+}
+#five {
+    background-color: red;
+}
+

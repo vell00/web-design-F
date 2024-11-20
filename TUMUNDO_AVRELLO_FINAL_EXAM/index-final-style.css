@@ -1,0 +1,250 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e2f;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #2b2d3a;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 70%;
+  max-width: 90px;
+  margin: 0 auto 20px;
+  padding-left: 25%;
+  padding-top: 2%;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px; 
+  padding-top: 20px; 
+}
+
+.menu-item {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background 0.3s ease;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background-color: #3a3c4a;
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.profile-menu {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3a3c4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sections */
+.section {
+  display: grid;
+  margin-bottom: 40px;
+  width: 200;
+}
+
+.section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.card-home {
+  overflow: hidden;
+  display: grid;
+  background-color: #2b2d3a;
+  background-image: url('image/image.jpg'); 
+  background-size: cover;
+  background-position: center; 
+  grid-auto-rows: 150px;
+  border-radius: 15px; 
+  padding-left: 30px; 
+  padding-top: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);  
+  transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+.card-home:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Bayangan lebih besar saat hover */
+  transform: translateY(-5px); /* Efek naik sedikit */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #2b2d3a;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  background-position: center; 
+  justify-content: flex-start;
+  gap: 10px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  font-size: 18px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); 
+}
+
+.card img.card-logo {
+  width: 70px; 
+  height: 70px; 
+  object-fit: cover; 
+}
+
+.card .card-text {
+  text-align: left; 
+  flex: 1; 
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  filter: brightness(1.2);
+  cursor: pointer; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-container-large {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.game-card {
+  overflow: hidden;
+  position: relative;
+  background-size: cover; /* Gambar memenuhi kotak */
+  background-position: center; /* Posisi gambar di tengah */
+  border-radius: 8px; /* Sudut melengkung */
+  padding: 300px 20px 20px 20px; /* Opsional: untuk jarak di dalam kotak */
+  color: white; /* Agar teks tetap terlihat */
+  font-size: 15px;
+  height: 100px; /* Tinggi kotak */
+  width: 200;
+  display: flex; /* Agar teks tetap di dalam kotak */
+  align-items: flex-end; /* Teks berada di bawah */
+  justify-content: center; /* Teks berada di tengah horizontal */
+  font-weight: bold; /* Teks lebih menonjol */
+}
+
+.game-card:nth-child(1) {
+  background-image: url('image/call-of-duty-black-ops-6-game-phone-wallpaper-4k-uhdpaper.com-813@0@j.jpg'); /* Ganti dengan path gambar */
+}
+
+.game-card:nth-child(2) {
+  background-image: url('image/0ed5055450adbd836945761a6fa43ee0.jpg'); /* Ganti dengan path gambar */
+}
+
+.game-card:nth-child(3) {
+  background-image: url('image/peakpx.jpg'); /* Ganti dengan path gambar */
+}
+
+.game-card:nth-child(4) {
+  background-image: url('image/735246.jpg'); /* Ganti dengan path gambar */
+}
+
+.game-card:nth-child(5) {
+  background-image: url('image/sea-of-thieves-8k-7680x4320-15389.jpg'); /* Ganti dengan path gambar */
+} 
+
+.game-card::after {
+  content: "Free";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #263641;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Collections Section */
+.collections {
+  margin-top: 40px;
+}
+
+.collections h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.collections-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; 
+}
+
+.collection-card {
+  flex: 0 0 400px; 
+  height: 250px; 
+  background-size: cover; 
+  background-position: center; 
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); 
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.collection-card:hover {
+  filter: brightness(1.2);
+}
+
+
+.collection-text {
+  font-size: 18px;
+  font-weight: bold;
+}
